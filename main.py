@@ -60,5 +60,4 @@ while len(guessed_states) < 50:
         state_data = data[data.state == answer_state]
         t.goto(int(state_data.x), int(state_data.y))
         # Escribo el nombre del estado, en las coordenas
-        t.write(
-            state_data.state.item())  # .item() es para eliminar otros datos como el "id", cabeceras de la lista, otros
+        t.write(state_data.state.item())  # .item() es para eliminar otros datos como el "id", cabeceras de la lista, otros
